@@ -3,6 +3,7 @@ imp_libs = # Implementation dependencies.
 #import imp_libs += libhello%lib{hello}
 
 lib{inbug2}: {hxx ixx txx cxx}{** -version} hxx{version} $imp_libs $int_libs
+lib{inbug2}: hxx{bug}
 
 # Include the generated version header into the distribution (so that we don't
 # pick up an installed one) and don't remove it when cleaning in src (so that
@@ -50,3 +51,7 @@ else
   install         = include/inbug2/
   install.subdirs = true
 }
+
+
+hxx{bug}: bug/in{bug}
+

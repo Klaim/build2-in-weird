@@ -1,5 +1,5 @@
 #include <inbug2/inbug2.hxx>
-
+#include <inbug2/bug.hxx>
 #include <ostream>
 #include <stdexcept>
 
