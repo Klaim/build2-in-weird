@@ -1,0 +1,33 @@
+#pragma once
+
+// The numeric version format is AAABBBCCCDDDE where:
+//
+// AAA - major version number
+// BBB - minor version number
+// CCC - bugfix version number
+// DDD - alpha / beta (DDD + 500) version number
+// E   - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAABBBCCC. For example:
+//
+// Version      AAABBBCCCDDDE
+//
+// 0.1.0        0000010000000
+// 0.1.2        0000010010000
+// 1.2.3        0010020030000
+// 2.2.0-a.1    0020019990010
+// 3.0.0-b.2    0029999995020
+// 2.2.0-a.1.z  0020019990011
+//
+#define INBUG2_VERSION       $inbug2.version.project_number$ULL
+#define INBUG2_VERSION_STR   "$inbug2.version.project$"
+#define INBUG2_VERSION_ID    "$inbug2.version.project_id$"
+
+#define INBUG2_VERSION_MAJOR $inbug2.version.major$
+#define INBUG2_VERSION_MINOR $inbug2.version.minor$
+#define INBUG2_VERSION_PATCH $inbug2.version.patch$
+
+#define INBUG2_PRE_RELEASE   $inbug2.version.pre_release$
+
+#define INBUG2_SNAPSHOT_SN   $inbug2.version.snapshot_sn$ULL
+#define INBUG2_SNAPSHOT_ID   "$inbug2.version.snapshot_id$"

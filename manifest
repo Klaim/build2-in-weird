@@ -1,0 +1,11 @@
+: 1
+name: inbug2
+version: 0.1.0-a.0.z
+summary: inbug2 C++ library
+license: proprietary
+description-file: README.md
+url: https://example.org/inbug2
+email: jlamotte@softbankrobotics.com
+depends: * build2 >= 0.10.0
+depends: * bpkg >= 0.10.0
+#depends: libhello ^1.0.0

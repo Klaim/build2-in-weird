@@ -1,0 +1,3 @@
+import libs = inbug2%lib{inbug2}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}

@@ -1,0 +1,6 @@
+$out_root/
+{
+  include inbug2/
+}
+
+export $out_root/inbug2/$import.target
