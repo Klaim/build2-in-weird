@@ -19,6 +19,7 @@ hxx{version}:
 # Build options.
 #
 cxx.poptions =+ "-I$out_root" "-I$src_root"
+cxx.poptions += "-I$out_base" # This is to allow including bug.hxx which is generated in out_base
 
 obja{*}: cxx.poptions += -DINBUG2_STATIC_BUILD
 objs{*}: cxx.poptions += -DINBUG2_SHARED_BUILD
